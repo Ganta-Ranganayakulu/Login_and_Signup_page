@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-box">
+        <h1>Student Portal</h1>
+
+        <div class="tab-buttons">
+            <button id="loginTab" class="active-tab" onclick="showLogin()">Login</button>
+            <button id="signupTab" onclick="showSignup()">Signup</button>
+        </div>
+
+        <form id="loginForm" class="form-box">
+            <h2>Login</h2>
+
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" placeholder="Enter email">
+
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" placeholder="Enter password">
+
+            <button type="button" class="submit-button" onclick="loginUser()">Login</button>
+            <p id="loginMessage" class="message"></p>
+        </form>
+
+        <form id="signupForm" class="form-box hide-form">
+            <h2>Signup</h2>
+
+            <label for="signupName">Full Name</label>
+            <input type="text" id="signupName" placeholder="Enter full name">
+
+            <label for="signupEmail">Email</label>
+            <input type="email" id="signupEmail" placeholder="Enter email">
+
+            <label for="signupPassword">Password</label>
+            <input type="password" id="signupPassword" placeholder="Enter password">
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm password">
+
+            <button type="button" class="submit-button" onclick="signupUser()">Signup</button>
+            <p id="signupMessage" class="message"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

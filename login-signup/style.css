@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef3f8;
+}
+
+.main-box {
+    width: 390px;
+    margin: 45px auto;
+    padding: 24px;
+    background-color: white;
+    border: 2px solid #c8d5e3;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: #1d3557;
+    font-size: 32px;
+}
+
+.project-name {
+    margin: 8px 0 20px;
+    text-align: center;
+    color: #607086;
+    font-size: 14px;
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.tab-buttons button {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #b8c7d8;
+    border-radius: 6px;
+    background-color: #e7eef6;
+    color: #1f2937;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tab-buttons .active-tab {
+    background-color: #2a9d8f;
+    color: white;
+    border-color: #2a9d8f;
+}
+
+.form-box {
+    display: block;
+}
+
+.hide-form {
+    display: none;
+}
+
+h2 {
+    margin: 0 0 14px;
+    color: #1d3557;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    color: #344256;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #b9c8d8;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2a9d8f;
+}
+
+.submit-button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1d3557;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #162941;
+}
+
+.message {
+    min-height: 20px;
+    margin: 12px 0 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.success {
+    color: #23856d;
+}
+
+.error {
+    color: #d62828;
+}
+
+@media (max-width: 460px) {
+    .main-box {
+        width: calc(100% - 32px);
+        margin: 28px auto;
+        padding: 18px;
+    }
+}
